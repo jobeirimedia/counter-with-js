@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "kanit", sans-serif;
+  font-size: 5rem;
+}
+
+/* let's get started */
+/* you can find started code in my github */
+/* mentioned in the description */
+
+.container {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #222;
+}
+
+.counter__header {
+  color: #ff4;
+  letter-spacing: 0.8rem;
+
+  animation: moveRightAndLeft 0.8s linear infinite alternate;
+}
+
+@keyframes moveRightAndLeft {
+  0% {
+    transform: translateX(0.8rem);
+  }
+
+  100% {
+    transform: translateX(-0.8rem);
+  }
+}
+
+.number {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  color: #ff4;
+  text-shadow: 0 0 1.5rem #ff4;
+  font-size: 7rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: aqua;
+  padding: 2.2rem 4.5rem;
+  font-size: 3rem;
+  font-weight: 500;
+  border-radius: 0.2rem;
+  border-top: 0.2rem solid yellow;
+  border-bottom: 0.2rem solid yellow;
+  border-top-right-radius: 3.8rem;
+  border-bottom-left-radius: 3.8rem;
+  box-shadow: 0 0 1rem yellow;
+  cursor: pointer;
+
+  transition: all 0.5s ease;
+}
+
+.btn:active {
+  transform: translateY(0.2rem);
+}
+
+.reset {
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
